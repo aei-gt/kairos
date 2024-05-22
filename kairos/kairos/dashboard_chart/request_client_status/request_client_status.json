@@ -1,0 +1,41 @@
+{
+ "chart_name": "Request Client Status",
+ "chart_type": "Report",
+ "creation": "2024-05-20 04:47:33.376983",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{\"finish_date\":\"2024-05-01\"}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "modified": "2024-05-20 04:50:09.842069",
+ "modified_by": "Administrator",
+ "module": "KAIROS",
+ "name": "Request Client Status",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Status Request Client",
+ "roles": [],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "department_name",
+ "y_axis": [
+  {
+   "color": "#761ACB"
+  },
+  {
+   "color": "#ECAD4B"
+  },
+  {
+   "color": "#CB2929"
+  },
+  {
+   "color": "#ED6396"
+  }
+ ]
+}
