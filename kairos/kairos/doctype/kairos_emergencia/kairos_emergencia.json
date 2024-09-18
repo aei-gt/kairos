@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "autoname": "format:{YY}-{#####}",
+ "creation": "2024-09-15 21:02:01.983518",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "evento_descripcion",
+  "evento_estado",
+  "evento_origen",
+  "evento_telefono",
+  "column_break_rpoa",
+  "archivo",
+  "evento_fecha",
+  "evento_tipo",
+  "responsable_actual_section",
+  "department",
+  "employee",
+  "add_movement",
+  "column_break_hdnk",
+  "nota",
+  "section_break_pmmw",
+  "detalle_movimiento"
+ ],
+ "fields": [
+  {
+   "fieldname": "evento_descripcion",
+   "fieldtype": "Data",
+   "label": "Descripci\u00f3n de Evento"
+  },
+  {
+   "default": "NO ASIGNADO",
+   "fieldname": "evento_estado",
+   "fieldtype": "Select",
+   "label": "Estado",
+   "options": "NO ASIGNADO\nEN REVISION\nSIN ASIGNAR\nASIGNADO\nEN PROCESO\nFINALIZADO"
+  },
+  {
+   "fieldname": "evento_origen",
+   "fieldtype": "Select",
+   "label": "Origen de Emergencia",
+   "options": "WHATSAPP\nPBX\nDENUNCIA PUBLICA"
+  },
+  {
+   "fieldname": "evento_telefono",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono"
+  },
+  {
+   "fieldname": "column_break_rpoa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "archivo",
+   "fieldtype": "Attach",
+   "label": "Archivo"
+  },
+  {
+   "default": "Today",
+   "fieldname": "evento_fecha",
+   "fieldtype": "Date",
+   "label": "Fecha del Evento"
+  },
+  {
+   "default": "OTROS",
+   "fieldname": "evento_tipo",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Tipo",
+   "options": "AGUA\nSEGURIDAD\nSALUD\nTRAFICO\nATENCION\nOTROS"
+  },
+  {
+   "fieldname": "section_break_pmmw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "detalle_movimiento",
+   "fieldtype": "Table",
+   "label": "Detalle de Movimientos",
+   "options": "kairos_emergencia_detalle",
+   "read_only": 1
+  },
+  {
+   "fieldname": "responsable_actual_section",
+   "fieldtype": "Section Break",
+   "label": "Responsable Actual"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Departamento",
+   "options": "Department"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Responsable",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "add_movement",
+   "fieldtype": "Button",
+   "label": "Agregar Movimiento"
+  },
+  {
+   "fieldname": "column_break_hdnk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nota",
+   "fieldtype": "Small Text",
+   "label": "Notas"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-17 16:40:26.847165",
+ "modified_by": "Administrator",
+ "module": "KAIROS",
+ "name": "kairos_emergencia",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

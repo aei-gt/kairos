@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"sJ7z864qRd\",\"type\":\"header\",\"data\":{\"text\":\"Expedientes<br>\",\"col\":12}}]",
+ "content": "[{\"id\":\"sJ7z864qRd\",\"type\":\"header\",\"data\":{\"text\":\"Expedientes<br>\",\"col\":12}},{\"id\":\"7TheXUhOwr\",\"type\":\"card\",\"data\":{\"card_name\":\"Eventos/Emergencias\",\"col\":4}}]",
  "creation": "2024-05-01 23:05:08.144660",
  "custom_blocks": [],
  "docstatus": 0,
@@ -12,8 +12,28 @@
  "indicator_color": "",
  "is_hidden": 0,
  "label": "Expedientes",
- "links": [],
- "modified": "2024-05-21 23:46:26.397220",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Eventos/Emergencias",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reporte de Eventos",
+   "link_count": 0,
+   "link_to": "kairos_emergencia",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-09-16 17:53:04.870988",
  "modified_by": "Administrator",
  "module": "KAIROS",
  "name": "Expedientes",
