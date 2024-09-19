@@ -20,7 +20,8 @@
   "column_break_hdnk",
   "nota",
   "section_break_pmmw",
-  "detalle_movimiento"
+  "detalle_movimiento",
+  "test"
  ],
  "fields": [
   {
@@ -110,11 +111,16 @@
    "fieldname": "nota",
    "fieldtype": "Small Text",
    "label": "Notas"
+  },
+  {
+   "fieldname": "test",
+   "fieldtype": "Data",
+   "label": "test"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-17 16:40:26.847165",
+ "modified": "2024-09-19 00:26:37.994707",
  "modified_by": "Administrator",
  "module": "KAIROS",
  "name": "kairos_emergencia",
