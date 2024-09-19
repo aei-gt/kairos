@@ -2,11 +2,11 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on("kairos_emergencia", {
-	departamento(frm) {
+	department(frm) {
         frm.set_query('employee', () => {
             return {
                 filters: {
-                    department: frm.doc.departamento
+                    department: frm.doc.department
                 }
             }
         })
