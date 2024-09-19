@@ -16,7 +16,7 @@
   "responsable_actual_section",
   "department",
   "employee",
-  "add_movement",
+  "agregar_movimiento",
   "column_break_hdnk",
   "nota",
   "section_break_pmmw",
@@ -100,11 +100,6 @@
    "options": "Employee"
   },
   {
-   "fieldname": "add_movement",
-   "fieldtype": "Button",
-   "label": "Agregar Movimiento"
-  },
-  {
    "fieldname": "column_break_hdnk",
    "fieldtype": "Column Break"
   },
@@ -127,12 +122,17 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "agregar_movimiento",
+   "fieldtype": "Button",
+   "label": "Agregar Movimiento"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-09-19 03:39:38.825053",
+ "modified": "2024-09-19 03:45:52.691765",
  "modified_by": "Administrator",
  "module": "KAIROS",
  "name": "kairos_emergencia",
