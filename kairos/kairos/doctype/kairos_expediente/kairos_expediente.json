@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "autoname": "format:EXP-{YY}-{####}",
+ "creation": "2024-05-19 22:50:24.505790",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "customer",
+  "description",
+  "expediente_tipo",
+  "column_break_uyfc",
+  "finish_date",
+  "date",
+  "status",
+  "actual_unity",
+  "requisitos_section",
+  "cumple_requisitos",
+  "movimientos_tab",
+  "section_break_fzti",
+  "department",
+  "employee",
+  "document",
+  "column_break_yxbd",
+  "expediente_detalle_nota",
+  "add_movement",
+  "historico_de_movimientos_section",
+  "kairos_expediente_movimiento"
+ ],
+ "fields": [
+  {
+   "default": "External",
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type of Document",
+   "options": "Internal\nExternal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "default": "now",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date Reception",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Mananger Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "finish_date",
+   "fieldtype": "Date",
+   "label": "Finish Estimate Date"
+  },
+  {
+   "fieldname": "column_break_uyfc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Approved\nRejected\nCompleted\nPending"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expediente_tipo",
+   "fieldtype": "Link",
+   "label": "Type of Request",
+   "options": "kairos_expediente_tipo"
+  },
+  {
+   "fieldname": "requisitos_section",
+   "fieldtype": "Section Break",
+   "label": "Requisitos"
+  },
+  {
+   "default": "0",
+   "fieldname": "cumple_requisitos",
+   "fieldtype": "Check",
+   "label": "Cumple requisitos"
+  },
+  {
+   "fieldname": "actual_unity",
+   "fieldtype": "Data",
+   "label": "Unidad Actual",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_fzti",
+   "fieldtype": "Section Break",
+   "label": "Agregar Movimiento"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Empleado Asignado",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_yxbd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expediente_detalle_nota",
+   "fieldtype": "Small Text",
+   "label": "Notas"
+  },
+  {
+   "fieldname": "add_movement",
+   "fieldtype": "Button",
+   "label": "Agregar Movimiento"
+  },
+  {
+   "fieldname": "movimientos_tab",
+   "fieldtype": "Tab Break",
+   "label": "Movimientos"
+  },
+  {
+   "fieldname": "historico_de_movimientos_section",
+   "fieldtype": "Section Break",
+   "label": "Historico de Movimientos"
+  },
+  {
+   "fieldname": "kairos_expediente_movimiento",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "document",
+   "fieldtype": "Attach",
+   "label": "Document"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-22 19:58:10.639702",
+ "modified_by": "Administrator",
+ "module": "KAIROS",
+ "name": "kairos_expediente",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

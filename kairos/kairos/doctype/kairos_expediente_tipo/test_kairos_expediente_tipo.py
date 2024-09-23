@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestClientRequest(FrappeTestCase):
+class Testkairos_expediente_tipo(FrappeTestCase):
 	pass
