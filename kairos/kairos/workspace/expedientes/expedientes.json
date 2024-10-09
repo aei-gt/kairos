@@ -33,13 +33,13 @@
    "type": "Link"
   }
  ],
- "modified": "2024-10-08 13:02:10.216718",
+ "modified": "2024-10-09 12:17:48.823238",
  "modified_by": "Administrator",
  "module": "KAIROS",
  "name": "Expedientes",
  "number_cards": [],
  "owner": "Administrator",
- "parent_page": "HR",
+ "parent_page": "",
  "public": 1,
  "quick_lists": [],
  "roles": [],
