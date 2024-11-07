@@ -5,15 +5,19 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "document_id",
   "type",
   "customer",
   "description",
   "expediente_tipo",
+  "default_department",
   "column_break_uyfc",
   "finish_date",
   "date",
   "status",
   "actual_unity",
+  "document_requirement_section",
+  "document_requirement",
   "requisitos_section",
   "cumple_requisitos",
   "movimientos_tab",
@@ -146,11 +150,36 @@
    "fieldname": "document",
    "fieldtype": "Attach",
    "label": "Document"
+  },
+  {
+   "fetch_from": "expediente_tipo.default_department",
+   "fieldname": "default_department",
+   "fieldtype": "Link",
+   "label": "Default Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "document_id",
+   "fieldtype": "Data",
+   "label": "Document ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "document_requirement_section",
+   "fieldtype": "Section Break",
+   "label": "Document Requirement"
+  },
+  {
+   "depends_on": "eval:doc.expediente_tipo != '';",
+   "fieldname": "document_requirement",
+   "fieldtype": "Table",
+   "label": "Document Requirement",
+   "options": "Document Requirement"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-22 19:58:10.639702",
+ "modified": "2024-11-07 19:49:34.853868",
  "modified_by": "Administrator",
  "module": "KAIROS",
  "name": "kairos_expediente",

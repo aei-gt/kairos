@@ -2,6 +2,15 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on("kairos_expediente", {
+        onload(frm){
+                frm.set_query('employee', () => {
+                        return {
+                                filters: {
+                                        department: frm.doc.department
+                                }
+                        }
+                        })
+        }
 	// timeline_refresh(frm) {
         //         let track=cur_frm.timeline.timeline_items
         //         let value;

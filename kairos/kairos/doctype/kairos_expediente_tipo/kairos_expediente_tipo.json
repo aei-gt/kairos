@@ -6,7 +6,9 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "expediente_tipo"
+  "expediente_tipo",
+  "column_break_adtq",
+  "default_department"
  ],
  "fields": [
   {
@@ -14,11 +16,21 @@
    "fieldtype": "Data",
    "label": "Tipo de Expediente",
    "unique": 1
+  },
+  {
+   "fieldname": "column_break_adtq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_department",
+   "fieldtype": "Link",
+   "label": "Default Department",
+   "options": "Department"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-22 13:46:55.387433",
+ "modified": "2024-11-07 16:53:06.849408",
  "modified_by": "Administrator",
  "module": "KAIROS",
  "name": "kairos_expediente_tipo",
